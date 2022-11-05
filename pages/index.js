@@ -32,11 +32,11 @@ export default function Home() {
     <>
       <Script
         // Add your reCAPTCHA site key
-        src="https://www.google.com/recaptcha/api.js?render=RECAPTCHA-SITE-KEY"
+        src="https://www.google.com/recaptcha/api.js?render=6LfKA9UiAAAAAD1_G8rPZY-hP9Um91a6QNrXkUwH"
         onReady={() => {
           grecaptcha.ready(function() {
             // Add your reCAPTCHA site key
-            grecaptcha.execute('{RECAPTCHA-SITE-KEY}', {action: 'homepage'})
+            grecaptcha.execute('6LfKA9UiAAAAAD1_G8rPZY-hP9Um91a6QNrXkUwH', {action: 'homepage'})
             .then(function(token) {
               setQuery({'g-recaptcha-response': token})
             });
